@@ -108,7 +108,7 @@ const testRun = async () => {
   user.firstName = 'Firstname';
   user.setNote = 'Yet other note';
   user = await user.save();
-  console.log(user.note);       // It's "Firstname: My other note"
+  console.log(user.note);       // It's "Firstname: Yet other note"
 
   // Doesn't work
   user.setNote = 'Note!';
